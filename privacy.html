@@ -356,7 +356,7 @@
         <section class="md-card" id="scope">
           <h2>1. Scope &amp; Core Privacy Commitment</h2>
           <p>
-            This Privacy Policy ("Policy") governs all mobile applications, games, open-source software, and web properties developed and published by <strong>Puzzak</strong> ("me", "my", "I"), including all releases on the Google Play Store ("PS") under the <code>page.puzzak.*</code> namespace, source repositories under <a href="https://github.com/Puzzaks">github.com/Puzzaks</a> and <a href="https://github.com/Puzzak">github.com/Puzzak</a> ("GH"), as well as web pages hosted under <code>puzzak.page</code> and <code>puzzak.tools</code>. This policy also automatically applies to any future applications released by me unless superseded by a separate app-specific notice.
+            This Privacy Policy and Terms of Service ("Policy") governs all mobile applications, games, open-source software, and web properties developed and published by <strong>Puzzak</strong> ("me", "my", "I"), including all releases on the Google Play Store ("PS") under the <code>page.puzzak.*</code> namespace, source repositories under <a href="https://github.com/Puzzaks">github.com/Puzzaks</a> and <a href="https://github.com/Puzzak">github.com/Puzzak</a> ("GH"), as well as web pages hosted under <code>puzzak.page</code> and <code>puzzak.tools</code>. This policy also automatically applies to any future applications released by me unless superseded by a separate app-specific notice.
           </p>
           <p>
             <strong>Core Principle:</strong> My software is built with a local-first, open-source mindset. I do not maintain proprietary user-tracking databases, do not sell or rent user data, do not set first-party tracking cookies, and do not keep user sessions on developer servers.
@@ -385,7 +385,7 @@
                   </div>
                 </div>
                 <p>
-                  Runs Gemini Nano 100% offline via Google <strong>AICore</strong> service (also covers legacy package <code>page.puzzak.geminilocal</code>). Prompts, chat histories, custom instructions, and optional local context (device time/language) never leave your device. System prompts are transparently inspectable in-app and in the repository (<code>assets/system_prompt.txt</code>).
+                  An interface for local AI model. Chats, prompts, individual messages - are never leaving your device. Uses optional analytics (Firebase) and crash reporting (Crashalitycs). No data besides analytics and crash reports is leaving your device.
                 </p>
               </div>
               <div class="app-links">
@@ -407,7 +407,7 @@
                   </div>
                 </div>
                 <p>
-                  Stores board states, custom spawn rules, and turn-by-turn auto-saves locally on your device. Integrates with <strong>Google Play Games Services</strong> (and Play Sidekick) to sync achievements and global leaderboards (like Best Score, Games Played, Tile Achieved, Time Spent, and Fastest Victory).
+                  Stores board states, custom spawn rules, and turn-by-turn auto-saves locally on your device. Integrates with <strong>Google Play Games Services</strong> (and Play Sidekick) to sync achievements and global leaderboards (like Best Score, Games Played, Tile Achieved, Time Spent, and Fastest Victory). Does no conain analytics yet.
                 </p>
               </div>
               <div class="app-links">
@@ -475,7 +475,7 @@
                   </div>
                 </div>
                 <p>
-                  Runs cellular automata simulations locally on your device. Custom cell styling, grid speeds, and theme preferences remain strictly in local storage with zero network transmission.
+                  Runs cellular automata simulations locally on your device. Custom cell styling, grid speeds, and theme preferences remain strictly in local storage with zero network transmission (outside of optional platform or ad services detailed in Section 3).
                 </p>
               </div>
               <div class="app-links">
@@ -498,7 +498,7 @@
                   </div>
                 </div>
                 <p>
-                  Renders interactive Mandelbrot fractals locally on your device. No personal data, telemetry, or usage metrics are collected or transmitted.
+                  Renders interactive Mandelbrot fractals locally on your device. No data transmitted (outside of optional platform or ad services detailed in Section 3).
                 </p>
               </div>
               <div class="app-links">
@@ -557,6 +557,9 @@
               <strong>Google AdMob &amp; Advertising SDKs:</strong> Used in supported apps to display optional or banner advertisements that help fund development and server infrastructure. Ad networks may use your device&#39;s Advertising ID (<code>AD_ID</code>), coarse location, and basic device telemetry to serve relevant or non-personalized ads. Users in the EEA and UK can manage ad consent preferences directly via the in-app consent dialog, and anyone can reset or opt out of personalized advertising in Android System Settings.
           </li>
           </ul>
+          <p>
+  <strong>EEA/UK Legal Basis (GDPR):</strong> Where applicable under GDPR and UK data protection laws, crash diagnostics and basic security telemetry are processed under legitimate interest (Art. 6(1)(f)), in-app billing and requested cloud syncs are processed to fulfill your user request/contract (Art. 6(1)(b)), and personalized advertising or optional crowdsourcing rely strictly on your explicit consent (Art. 6(1)(a)).
+</p>
           <p>
             Reference: <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google Privacy Policy</a> &bull; <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer" target="_blank">Firebase Privacy &amp; Security</a>
           </p>
@@ -623,7 +626,7 @@
       <strong>License &amp; Open-Source Use:</strong> Unless stated otherwise in a specific repository, source code is released under the <strong>Unlicense</strong>. Compiled binaries distributed via Google Play are provided for your personal or commercial use in compliance with applicable laws and Google Play&#39;s Terms of Service.
     </li>
     <li>
-      <strong>Donations, In-App Purchases &amp; Refunds:</strong> Optional support donations and in-app purchases are processed exclusively by Google Play Billing. Voluntary donations support ongoing development and server infrastructure and do not grant equity or special service guarantees. All payment processing, statutory consumer withdrawal rights (where applicable under EEA/UK law), and refund requests are managed directly through Google Play Support and Google&#39;s refund policies.
+      <strong>Donations, In-App Purchases &amp; Refunds:</strong> Optional support donations and in-app purchases are processed exclusively by Google Play Billing. Voluntary donations support ongoing development and server infrastructure and do not grant equity or special service guarantees. All payment processing, statutory consumer withdrawal rights (where applicable under EEA/UK law), and refund requests are managed directly through Google Play Support and Google&#39;s refund policies. By completing an in-app purchase or voluntary support donation, you acknowledge that digital fulfillment is immediate and, where applicable under EEA/UK consumer laws, you expressly consent to immediate performance and waive your statutory 14-day right of withdrawal once the transaction is completed.
     </li>
     <li>
       <strong>Disclaimer of Warranties (&quot;As-Is&quot;):</strong> All software, offline AI interfaces (such as PAIOS), network monitoring tools (such as PTK), and games are provided strictly <strong>&quot;AS IS&quot;</strong> and <strong>&quot;AS AVAILABLE&quot;</strong> without warranties of any kind. I do not guarantee uninterrupted availability, error-free execution, or the accuracy of third-party APIs or on-device AI model outputs.
@@ -636,6 +639,9 @@
 </li>
     <li>
   <strong>On-Device AI &amp; Tool-Calling Disclaimer (PAIOS):</strong> Generative AI models executed via Android AICore are probabilistic and may produce inaccurate, incomplete, or nonsensical outputs (&quot;hallucinations&quot;). AI-generated responses do not constitute professional, legal, medical, or financial advice. Any local tool-calling capabilities, system intents, or automated actions triggered through PAIOS are executed strictly at your own direction and risk.
+</li>
+    <li>
+  <strong>Governing Law &amp; Changes:</strong> These Terms are governed by the laws of Ukraine, without prejudice to mandatory consumer protection provisions applicable in your country of residence (such as EEA or UK laws). If any provision of these Terms is found unenforceable, the remaining provisions will remain in full effect. I may update this Policy and Terms from time to time by updating the &quot;Effective&quot; date at the top of this page.
 </li>
   </ul>
 </section>
