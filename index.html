@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Official Universal Privacy Policy & Security Disclosures for applications and web properties by Puzzak (page.puzzak / github.com/Puzzaks)." />
+  <meta name="theme-color" content="#0f1514" />
+  <title>Privacy Policy — Puzzak (page.puzzak)</title>
+
+  <style>
+    /* Material Design 3 — Dark Teal (#009688) Default Token Palette */
+    :root {
+      --md-bg: #0f1514;
+      --md-surface: #171d1c;
+      --md-surface-high: #212826;
+      --md-surface-highest: #2c3331;
+      --md-primary: #80d5cb;
+      --md-primary-teal: #009688;
+      --md-primary-container: #005048;
+      --md-on-primary-container: #9df2e7;
+      --md-on-surface: #dee4e1;
+      --md-on-surface-variant: #bec9c6;
+      --md-outline: #3f4947;
+      --md-radius-lg: 24px;
+      --md-radius-md: 16px;
+      --md-radius-sm: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--md-bg);
+      color: var(--md-on-surface);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .layout-wrapper {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+
+    /* Header Card */
+    header.md-header {
+      background: var(--md-surface);
+      border: 1px solid var(--md-outline);
+      border-radius: var(--md-radius-lg);
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.75rem;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--md-primary-container);
+      color: var(--md-on-primary-container);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.25rem 0.8rem;
+      border-radius: 999px;
+      letter-spacing: 0.02em;
+    }
+
+    .theme-btn {
+      background: var(--md-surface-high);
+      color: var(--md-on-surface);
+      border: 1px solid var(--md-outline);
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+
+    .theme-btn:hover {
+      background: var(--md-surface-highest);
+    }
+
+    h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: clamp(1.75rem, 4vw, 2.3rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--md-on-surface-variant);
+      font-size: 0.95rem;
+    }
+
+    /* Dynamic App Context Banner */
+    #active-app-banner {
+      display: none;
+      background: var(--md-primary-container);
+      color: var(--md-on-primary-container);
+      border: 1px solid var(--md-primary-teal);
+      border-radius: var(--md-radius-md);
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    #active-app-banner.visible {
+      display: flex;
+    }
+
+    .reset-filter-btn {
+      background: rgba(0, 0, 0, 0.25);
+      color: inherit;
+      border: 1px solid currentColor;
+      border-radius: 999px;
+      padding: 0.3rem 0.85rem;
+      font-size: 0.8rem;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* App Filter Bar */
+    .app-filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .chip {
+      background: var(--md-surface);
+      color: var(--md-on-surface-variant);
+      border: 1px solid var(--md-outline);
+      border-radius: 999px;
+      padding: 0.4rem 0.9rem;
+      font-size: 0.83rem;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+
+    .chip:hover,
+    .chip.active {
+      background: var(--md-primary-teal);
+      color: #ffffff;
+      border-color: var(--md-primary-teal);
+      font-weight: 600;
+    }
+
+    /* Content Cards */
+    section.md-card {
+      background: var(--md-surface);
+      border: 1px solid var(--md-outline);
+      border-radius: var(--md-radius-md);
+      padding: 1.75rem;
+      margin-bottom: 1.25rem;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    section.md-card.highlighted-card {
+      border: 2px solid var(--md-primary-teal);
+      box-shadow: 0 0 0 4px rgba(0, 150, 136, 0.18);
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 0.85rem;
+      font-size: 1.25rem;
+      color: var(--md-primary);
+    }
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 0.35rem;
+      font-size: 1.05rem;
+      color: var(--md-on-surface);
+    }
+
+    p, ul {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: var(--md-on-surface-variant);
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    li strong {
+      color: var(--md-on-surface);
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background: var(--md-surface-high);
+      color: var(--md-primary);
+      padding: 0.15rem 0.4rem;
+      border-radius: 6px;
+      font-size: 0.84em;
+    }
+
+    /* App Breakdown Grid */
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .app-item {
+      background: var(--md-surface-high);
+      border: 1px solid var(--md-outline);
+      border-radius: var(--md-radius-sm);
+      padding: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.2s ease;
+    }
+
+    .app-item.active-app {
+      border: 2px solid var(--md-primary-teal);
+      background: var(--md-surface-highest);
+      box-shadow: 0 0 0 4px rgba(0, 150, 136, 0.18);
+    }
+
+    .app-card-head {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.65rem;
+    }
+
+    .app-icon-box {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: var(--md-primary-container);
+      color: var(--md-on-primary-container);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      overflow: hidden;
+      border: 1px solid var(--md-outline);
+    }
+
+    .app-icon-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: none;
+    }
+
+    .app-icon-box svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+    }
+
+    .app-title-group {
+      min-width: 0;
+    }
+
+    .app-title-group h3 {
+      margin: 0;
+      font-size: 1rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .app-links {
+      font-size: 0.78rem;
+      margin-top: 0.5rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--md-outline);
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    a {
+      color: var(--md-primary);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--md-on-surface-variant);
+      font-size: 0.85rem;
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--md-outline);
+    }
+  </style>
+</head>
+<body>
+  <div class="layout-wrapper">
+
+    <header class="md-header">
+      <div class="badge-row">
+        <span class="pill">page.puzzak &bull; Universal Policy &amp; Security</span>
+        <button type="button" class="theme-btn" id="theme-toggle" aria-label="Toggle color theme">Theme: Dark</button>
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">
+        Developer: <strong>Puzzak</strong> (<code>page.puzzak</code> / <a href="https://github.com/Puzzaks">github.com/Puzzaks</a>) &bull; Effective: <strong>November 4, 2026</strong>
+      </p>
+    </header>
+
+    <!-- Dynamic Highlight Banner when queried via ?app= or # -->
+    <div id="active-app-banner" role="status" aria-live="polite">
+      <div>
+        <span>Viewing policy highlighted for: </span>
+        <strong id="active-app-name">Application</strong>
+      </div>
+      <a href="?" class="reset-filter-btn" id="clear-filter">Show All Products</a>
+    </div>
+
+    <!-- Filter Chips -->
+    <nav class="app-filter-bar" aria-label="Highlight specific application">
+      <a href="?app=all" class="chip active" data-app="all">All Products</a>
+      <a href="?app=paios" class="chip" data-app="paios">PAIOS</a>
+      <a href="?app=material2048" class="chip" data-app="material2048">Material 2048</a>
+      <a href="?app=ptk" class="chip" data-app="ptk">PTK</a>
+      <a href="?app=tgcrawl" class="chip" data-app="tgcrawl">TGCrawl</a>
+      <a href="?app=gol" class="chip" data-app="gol">Game of Life</a>
+      <a href="?app=fractals" class="chip" data-app="fractals">Fractal Viewer</a>
+      <a href="?app=mcplayer" class="chip" data-app="mcplayer">MCPlayer</a>
+      <a href="?app=fptools" class="chip" data-app="fptools">FPTools</a>
+      <a href="?app=povertypal" class="chip" data-app="povertypal">PovertyPal</a>
+      <a href="?app=web" class="chip" data-app="web">Websites &amp; GH Pages</a>
+    </nav>
+
+    <main>
+      <article>
+
+        <section class="md-card" id="scope">
+          <h2>1. Scope &amp; Core Privacy Commitment</h2>
+          <p>
+            This Privacy Policy governs all mobile applications, games, open-source software, and web properties developed and published by <strong>Puzzak</strong>, including all releases on the Google Play Store under the <code>page.puzzak.*</code> namespace, source repositories under <a href="https://github.com/Puzzaks">github.com/Puzzaks</a> and <a href="https://github.com/Puzzak">github.com/Puzzak</a>, as well as web pages hosted on <code>puzzak.page</code> and GitHub Pages. This policy also automatically applies to any future applications released by Puzzak unless superseded by a separate app-specific notice.
+          </p>
+          <p>
+            <strong>Core Principle:</strong> Puzzak software is built with a local-first, open-source mindset. Puzzak does not maintain proprietary user-tracking databases, does not sell or rent user data, does not set first-party tracking cookies, and does not keep user sessions on developer servers.
+          </p>
+        </section>
+
+        <section class="md-card" id="apps-overview">
+          <h2>2. Product-Specific Disclosures</h2>
+          <p>
+            Every application listed below adheres to the blanket protections in this policy. Specific permissions, local storage mechanisms, and optional network features for individual apps are detailed per product:
+          </p>
+
+          <div class="app-grid">
+
+            <!-- PAIOS -->
+            <div class="app-item" id="app-paios" data-app-card="paios" data-aliases="paios,geminilocal">
+              <div>
+                <div class="app-card-head">
+                  <div class="app-icon-box">
+                    <img data-repo-icon="https://raw.githubusercontent.com/Puzzaks/PAIOS/main/assets/icon.png" alt="PAIOS Icon" />
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2M7.5 13A2.5 2.5 0 0 0 5 15.5A2.5 2.5 0 0 0 7.5 18a2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 0 7.5 13m9 0a2.5 2.5 0 0 0-2.5 2.5a2.5 2.5 0 0 0 2.5 2.5a2.5 2.5 0 0 0 2.5-2.5a2.5 2.5 0 0 0-2.5-2.5Z"/></svg>
+                  </div>
+                  <div class="app-title-group">
+                    <h3>PAIOS — Offline AI</h3>
+                    <code>page.puzzak.paios</code>
+                  </div>
+                </div>
+                <p>
+                  Runs Gemini Nano 100% offline via Google's on-device <strong>Android AICore</strong> service (also covers legacy package <code>page.puzzak.geminilocal</code>). Prompts, chat histories, custom instructions, and optional local context (device time/language) never leave your device. System prompts are transparently inspectable in-app and in the repository (<code>assets/system_prompt.txt</code>).
+                </p>
+              </div>
+              <div class="app-links">
+                <a href="https://github.com/Puzzaks/PAIOS" target="_blank" rel="noopener">GitHub Repo</a>
+                <a href="https://play.google.com/store/apps/details?id=page.puzzak.paios" target="_blank" rel="noopener">Google Play</a>
+              </div>
+            </div>
+
+            <!-- Material 2048 -->
+            <div class="app-item" id="app-material2048" data-app-card="material2048" data-aliases="2048,material2048">
+              <div>
+                <div class="app-card-head">
+                  <div class="app-icon-box">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4V4m10 0h6v6h-6V4M4 14h6v6H4v-6m10 0h6v6h-6v-6Z"/></svg>
+                  </div>
+                  <div class="app-title-group">
+                    <h3>Material 2048: Built for You</h3>
+                    <code>page.puzzak.material2048</code>
+                  </div>
+                </div>
+                <p>
+                  Stores board states, custom spawn rules, and turn-by-turn auto-saves locally on your device. Integrates with <strong>Google Play Games Services</strong> (and Play Sidekick) to sync achievements and five global leaderboards (Best Score, Games Played, Tile Achieved, Time Spent, and Fastest Victory).
+                </p>
+              </div>
+              <div class="app-links">
+                <a href="https://play.google.com/store/apps/details?id=page.puzzak.material2048" target="_blank" rel="noopener">Google Play</a>
+              </div>
+            </div>
+
+            <!-- PTK -->
+            <div class="app-item" id="app-ptk" data-app-card="ptk" data-aliases="ptk,glassptk">
+              <div>
+                <div class="app-card-head">
+                  <div class="app-icon-box">
+                    <img data-repo-icon="https://raw.githubusercontent.com/Puzzaks/PTK/main/assets/icon.png" alt="PTK Icon" />
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 1h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1m0 8h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1m0 8h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1M7 3v2h2V3H7m0 8v2h2v-2H7m0 8v2h2v-2H7Z"/></svg>
+                  </div>
+                  <div class="app-title-group">
+                    <h3>PTK — Servers &amp; Statuspages</h3>
+                    <code>page.puzzak.ptk</code>
+                  </div>
+                </div>
+                <p>
+                  Monitors user-configured server IP/URLs via direct TCP probes, optional self-hosted <code>AIO-Monitor</code> (<code>AIO.php</code>) telemetry scripts, and public Atlassian Statuspage endpoints. All configured server addresses, credentials, and monitoring logs stay strictly on your device (also applies to <code>GlassPTK</code>).
+                </p>
+              </div>
+              <div class="app-links">
+                <a href="https://github.com/Puzzaks/PTK" target="_blank" rel="noopener">GitHub Repo</a>
+                <a href="https://play.google.com/store/apps/details?id=page.puzzak.ptk" target="_blank" rel="noopener">Google Play</a>
+              </div>
+            </div>
+
+            <!-- TGCrawl -->
+            <div class="app-item" id="app-tgcrawl" data-app-card="tgcrawl" data-aliases="tgcrawl">
+              <div>
+                <div class="app-card-head">
+                  <div class="app-icon-box">
+                    <img data-repo-icon="https://raw.githubusercontent.com/Puzzaks/TGCrawl/main/assets/icon.png" alt="TGCrawl Icon" />
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+                  </div>
+                  <div class="app-title-group">
+                    <h3>TGCrawl — Telegram Analysis</h3>
+                    <code>page.puzzak.tgcrawl</code>
+                  </div>
+                </div>
+                <p>
+                  Authenticates directly with Telegram via TDLib on your device to analyze public channel repost connections. Credentials and private messages are never accessed or transmitted. If you explicitly opt in to anonymous crowdsourcing, only discovered public channel connection graphs and channel IDs are shared.
+                </p>
+              </div>
+              <div class="app-links">
+                <a href="https://github.com/Puzzaks/TGCrawl" target="_blank" rel="noopener">GitHub Repo</a>
+                <a href="https://play.google.com/store/apps/details?id=page.puzzak.tgcrawl" target="_blank" rel="noopener">Google Play</a>
+              </div>
+            </div>
+
+            <!-- Conway's Game of Life -->
+            <div class="app-item" id="app-gol" data-app-card="gol" data-aliases="gol,gameoflife">
+              <div>
+                <div class="app-card-head">
+                  <div class="app-icon-box">
+                    <img data-repo-icon="https://raw.githubusercontent.com/Puzzaks/gol/main/assets/icon.png" alt="GoL Icon" />
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h18v18H3V3m2 2v4h4V5H5m6 0v4h4V5h-4m6 0v4h2V5h-2M5 11v4h4v-4H5m6 0v4h4v-4h-4m6 0v4h2v-4h-2M5 17v2h4v-2H5m6 0v2h4v-2h-4m6 0v2h2v-2h-2Z"/></svg>
+                  </div>
+                  <div class="app-title-group">
+                    <h3>Conway's Game of Life</h3>
+                    <code>page.puzzak.gol</code>
+                  </div>
+                </div>
+                <p>
+                  Runs cellular automata simulations locally on your device. Custom cell styling, grid speeds, and theme preferences remain strictly in local storage with zero network transmission.
+                </p>
+              </div>
+              <div class="app-links">
+                <a href="https://github.com/Puzzaks/gol" target="_blank" rel="noopener">GitHub Repo</a>
+                <a href="https://play.google.com/store/apps/details?id=page.puzzak.gol" target="_blank" rel="noopener">Google Play</a>
+              </div>
+            </div>
+
+            <!-- Fractal Viewer -->
+            <div class="app-item" id="app-fractals" data-app-card="fractals" data-aliases="fractals,fractalviewer">
+              <div>
+                <div class="app-card-head">
+                  <div class="app-icon-box">
+                    <img data-repo-icon="https://raw.githubusercontent.com/Puzzaks/fractals/main/assets/icon.png" alt="Fractals Icon" />
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 4a6 6 0 0 1 6 6 6 6 0 0 1-6 6 6 6 0 0 1-6-6 6 6 0 0 1 6-6m0 3a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3Z"/></svg>
+                  </div>
+                  <div class="app-title-group">
+                    <h3>Fractal Viewer</h3>
+                    <code>page.puzzak.fractals</code>
+                  </div>
+                </div>
+                <p>
+                  Renders interactive Mandelbrot fractals locally on your device. No personal data, telemetry, or usage metrics are collected or transmitted.
+                </p>
+              </div>
+              <div class="app-links">
+                <a href="https://github.com/Puzzaks/fractals" target="_blank" rel="noopener">GitHub Repo</a>
+                <a href="https://play.google.com/store/apps/details?id=page.puzzak.fractals" target="_blank" rel="noopener">Google Play</a>
+              </div>
+            </div>
+
+            <!-- MCPlayer -->
+            <div class="app-item" id="app-mcplayer" data-app-card="mcplayer" data-aliases="mcplayer">
+              <div>
+                <div class="app-card-head">
+                  <div class="app-icon-box">
+                    <img data-repo-icon="https://raw.githubusercontent.com/Puzzaks/MCPlayer/main/assets/icon.png" alt="MCPlayer Icon" />
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6Z"/></svg>
+                  </div>
+                  <div class="app-title-group">
+                    <h3>MCPlayer (Public Archive)</h3>
+                    <code>page.puzzak.mcplayer</code>
+                  </div>
+                </div>
+                <p>
+                  Unofficial archived client interfacing directly with the public Monstercat API to stream catalog tracks. Does not collect or send user data to Puzzak; requests to Monstercat servers are governed by Monstercat's Terms of Service.
+                </p>
+              </div>
+              <div class="app-links">
+                <a href="https://github.com/Puzzaks/MCPlayer" target="_blank" rel="noopener">GitHub Archive</a>
+                <a href="https://play.google.com/store/apps/details?id=page.puzzak.mcplayer" target="_blank" rel="noopener">Google Play</a>
+              </div>
+            </div>
+
+            <!-- FPTools & PovertyPal -->
+            <div class="app-item" id="app-fptools" data-app-card="fptools" data-aliases="fptools,povertypal">
+              <div>
+                <div class="app-card-head">
+                  <div class="app-icon-box">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+                  </div>
+                  <div class="app-title-group">
+                    <h3>FPTools &amp; PovertyPal</h3>
+                    <code>page.puzzak.*</code>
+                  </div>
+                </div>
+                <p>
+                  <strong>FPTools</strong> (Email &amp; VoIP management utilities) and <strong>PovertyPal</strong> (personal finance &amp; budget tracker) store all records, accounts, and ledger entries locally on your device. Puzzak has no access to your financial or communication data.
+                </p>
+              </div>
+              <div class="app-links">
+                <a href="https://github.com/Puzzaks/FPTools" target="_blank" rel="noopener">FPTools Repo</a>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="md-card" id="android-sdks">
+          <h2>3. Mobile Platform Services &amp; Third-Party SDKs</h2>
+          <p>
+            Depending on the features enabled in a specific current or future application, the software may interface with official Android system components or Google Play services:
+          </p>
+          <ul>
+            <li>
+              <strong>Android AICore (On-Device AI):</strong> Used in apps such as PAIOS to run local generative models (Gemini Nano). All inference happens strictly on-device via Google's system-level AICore service without transmitting prompts or responses over the internet.
+            </li>
+            <li>
+              <strong>Google Play Games Services:</strong> Used in games such as Material 2048 to provide cloud saves, achievements, and global leaderboards. When signed in, Google processes your gamer profile ID and gameplay statistics.
+            </li>
+            <li>
+              <strong>Google Play Console &amp; Firebase Crashlytics:</strong> Used to diagnose crashes and improve stability. If an app crashes, anonymized stack traces, device model, and Android OS version may be reported via Google's telemetry.
+            </li>
+            <li>
+              <strong>Android Auto Backup &amp; Google Drive Sync:</strong> Standard Android OS feature that backs up local app preferences to your personal Google Drive account unless disabled in device settings.
+            </li>
+            <li>
+              <strong>Google Play Billing:</strong> Processes any optional in-app purchases, unlocks, or support donations directly through Google Play. Puzzak never views or handles your payment method details.
+            </li>
+          </ul>
+          <p>
+            Reference: <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google Privacy Policy</a> &bull; <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer" target="_blank">Firebase Privacy &amp; Security</a>
+          </p>
+        </section>
+
+        <section class="md-card" id="web-cookies" data-app-card="web" data-aliases="web,website">
+          <h2>4. Websites, GitHub Pages &amp; Cookies</h2>
+          <p>
+            This section applies to all web properties maintained by Puzzak, including <code>puzzak.page</code>, the Flutter MD3 <code>Website</code> project, and pages hosted on <strong>GitHub Pages</strong> (<code>puzzaks.github.io</code> / <code>puzzak.github.io</code>).
+          </p>
+          <ul>
+            <li>
+              <strong>Zero First-Party Cookies or Sessions:</strong> Puzzak does not set first-party cookies, store server-side user sessions, or require accounts on web properties.
+            </li>
+            <li>
+              <strong>Google Analytics (Third-Party Cookies):</strong> Our web pages use Google Analytics to understand aggregate visitor traffic and page performance. Google Analytics sets cookies in your browser to collect anonymized traffic data. You can block these cookies via your browser settings, an ad-blocker, or the <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener noreferrer" target="_blank">Google Analytics Opt-out Add-on</a>.
+            </li>
+            <li>
+              <strong>GitHub Pages CDN Logs:</strong> Static pages hosted on GitHub Pages are served via GitHub Inc. and Fastly CDN, which log visitor IP addresses for security and network diagnostics per the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer" target="_blank">GitHub Privacy Statement</a>.
+            </li>
+          </ul>
+        </section>
+
+        <section class="md-card" id="security-contributions">
+          <h2>5. Security Policy, Open-Source Transparency &amp; Contributions</h2>
+          <p>
+            Most Puzzak projects are released into the public domain under the <strong>Unlicense</strong> on GitHub, allowing anyone to audit the exact source code, network calls, and system prompts.
+          </p>
+          <ul>
+            <li>
+              <strong>Security Scope (<code>SECURITY.md</code>):</strong> Because apps like PAIOS act as local interfaces for system services (such as Android AICore) and apps like PTK run strictly on-device, security updates focus on safe local API handling and dependency integrity. Only the latest published release on Google Play and the <code>main</code> branch on GitHub are actively supported with security patches.
+            </li>
+            <li>
+              <strong>Community Contributions &amp; Translations (<code>CONTRIBUTING.md</code>):</strong> While English and Ukrainian localizations are maintained directly by Puzzak, community code contributions, bug reports, and translations (such as JSON localization PRs) are welcomed via GitHub Pull Requests. Contributors are credited in repository documentation and release notes (with special thanks to community contributors across PAIOS and TGCrawl including <code>@abc0922001</code>, <code>@NewNiklas</code>, <code>@mikropsoft</code>, <code>@spageektti</code>, and plugin inspiration from <code>@kekko7072</code>).
+            </li>
+          </ul>
+        </section>
+
+        <section class="md-card" id="retention-rights">
+          <h2>6. Data Control, Deletion &amp; Contact</h2>
+          <p>
+            Because your application data lives on your own hardware, you can delete it immediately at any time by clearing the app's storage in Android Settings or uninstalling the application. Play Games leaderboard entries and cloud backups can be deleted directly inside the Google Play Games app settings.
+          </p>
+          <p>
+            For privacy inquiries, vulnerability disclosures, or support across any <code>page.puzzak</code> product:
+          </p>
+          <ul>
+            <li><strong>Developer:</strong> Puzzak (<code>page.puzzak</code>)</li>
+            <li><strong>Email:</strong> <a href="mailto:puzzak@puzzak.page">puzzak@puzzak.page</a> / <a href="mailto:support@puzzak.page">support@puzzak.page</a></li>
+            <li><strong>Web:</strong> <a href="https://puzzak.page">https://puzzak.page</a></li>
+            <li><strong>GitHub Organizations:</strong> <a href="https://github.com/Puzzaks" target="_blank" rel="noopener">github.com/Puzzaks</a> &bull; <a href="https://github.com/Puzzak" target="_blank" rel="noopener">github.com/Puzzak</a></li>
+          </ul>
+        </section>
+
+      </article>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Puzzak (<code>page.puzzak</code>). Proudly crafted in Ukraine.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    (function () {
+      // 1. Progressive Icon Loader from GitHub Raw with graceful SVG fallback
+      document.querySelectorAll('img[data-repo-icon]').forEach(function (img) {
+        var url = img.getAttribute('data-repo-icon');
+        img.onload = function () {
+          img.style.display = 'block';
+          var svg = img.parentElement.querySelector('svg');
+          if (svg) svg.style.display = 'none';
+        };
+        img.onerror = function () {
+          img.remove();
+        };
+        img.src = url;
+      });
+
+      // 2. Theme Toggle (Default: Dark MD3 Teal)
+      var root = document.documentElement;
+      var themeBtn = document.getElementById('theme-toggle');
+      var currentTheme = 'dark';
+
+      if (themeBtn) {
+        themeBtn.addEventListener('click', function () {
+          if (currentTheme === 'dark') {
+            root.style.setProperty('--md-bg', '#f4fbf8');
+            root.style.setProperty('--md-surface', '#ffffff');
+            root.style.setProperty('--md-surface-high', '#e8efed');
+            root.style.setProperty('--md-surface-highest', '#dce4e1');
+            root.style.setProperty('--md-primary', '#006a60');
+            root.style.setProperty('--md-primary-container', '#9df2e7');
+            root.style.setProperty('--md-on-primary-container', '#00201c');
+            root.style.setProperty('--md-on-surface', '#161d1b');
+            root.style.setProperty('--md-on-surface-variant', '#3f4947');
+            root.style.setProperty('--md-outline', '#bec9c6');
+            currentTheme = 'light';
+            themeBtn.textContent = 'Theme: Light';
+          } else {
+            root.removeAttribute('style');
+            currentTheme = 'dark';
+            themeBtn.textContent = 'Theme: Dark';
+          }
+        });
+      }
+
+      // 3. Universal URL Parameter (?app=...) and Hash (#...) Highlighting
+      var appLabels = {
+        'paios': 'PAIOS — Offline AI (page.puzzak.paios)',
+        'material2048': 'Material 2048: Built for You (page.puzzak.material2048)',
+        'ptk': 'PTK — Servers and Statuspages! (page.puzzak.ptk)',
+        'tgcrawl': 'TGCrawl — Telegram Analysis (page.puzzak.tgcrawl)',
+        'gol': "Conway's Game of Life (page.puzzak.gol)",
+        'fractals': 'Fractal Viewer (page.puzzak.fractals)',
+        'mcplayer': 'MCPlayer — Monstercat Player (page.puzzak.mcplayer)',
+        'fptools': 'FPTools (page.puzzak.fptools)',
+        'povertypal': 'PovertyPal (page.puzzak.povertypal)',
+        'web': 'Puzzak Websites & GitHub Pages'
+      };
+
+      function resolveCanonicalKey(rawInput) {
+        if (!rawInput) return 'all';
+        var clean = rawInput.toLowerCase().replace(/^page\.puzzak\./, '').replace(/[^a-z0-9]/g, '');
+        if (!clean || clean === 'all') return 'all';
+
+        var cards = document.querySelectorAll('[data-app-card]');
+        for (var i = 0; i < cards.length; i++) {
+          var key = cards[i].getAttribute('data-app-card');
+          var aliases = (cards[i].getAttribute('data-aliases') || '').split(',');
+          if (key === clean || aliases.indexOf(clean) !== -1) {
+            return key === 'fptools' && clean === 'povertypal' ? 'povertypal' : key;
+          }
+        }
+        return clean;
+      }
+
+      function getRequestedApp() {
+        var params = new URLSearchParams(window.location.search);
+        var fromQuery = params.get('app') || params.get('id');
+        if (fromQuery) return resolveCanonicalKey(fromQuery);
+        var fromHash = window.location.hash.replace(/^#/, '').replace(/^app-/, '');
+        if (fromHash) return resolveCanonicalKey(fromHash);
+        return 'all';
+      }
+
+      function applyHighlight(appKey) {
+        var banner = document.getElementById('active-app-banner');
+        var bannerName = document.getElementById('active-app-name');
+        var chips = document.querySelectorAll('.chip');
+        var cards = document.querySelectorAll('[data-app-card]');
+
+        chips.forEach(function (chip) {
+          chip.classList.toggle('active', chip.getAttribute('data-app') === appKey);
+        });
+
+        cards.forEach(function (card) {
+          card.classList.remove('active-app', 'highlighted-card');
+        });
+
+        if (appKey && appKey !== 'all') {
+          var displayName = appLabels[appKey] || ('page.puzzak.' + appKey);
+          bannerName.textContent = displayName;
+          banner.classList.add('visible');
+
+          var cardSelectorKey = appKey === 'povertypal' ? 'fptools' : appKey;
+          var targetCard = document.querySelector('[data-app-card="' + cardSelectorKey + '"]');
+          if (targetCard) {
+            targetCard.classList.add(targetCard.tagName === 'SECTION' ? 'highlighted-card' : 'active-app');
+            targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        } else {
+          banner.classList.remove('visible');
+        }
+      }
+
+      document.querySelectorAll('.chip').forEach(function (chip) {
+        chip.addEventListener('click', function (e) {
+          e.preventDefault();
+          var targetApp = this.getAttribute('data-app');
+          var newUrl = targetApp === 'all' ? window.location.pathname : '?app=' + targetApp;
+          window.history.pushState({ app: targetApp }, '', newUrl);
+          applyHighlight(targetApp);
+        });
+      });
+
+      var clearBtn = document.getElementById('clear-filter');
+      if (clearBtn) {
+        clearBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          window.history.pushState({}, '', window.location.pathname);
+          applyHighlight('all');
+        });
+      }
+
+      window.addEventListener('popstate', function () {
+        applyHighlight(getRequestedApp());
+      });
+
+      applyHighlight(getRequestedApp());
+    })();
+  </script>
+</body>
+</html>
